@@ -17,11 +17,11 @@ function Todo(props)
     {
         setmodalisopen(false);
     }
-    return  <div>
+    return  <div className='card'>
 
         <h2>{props.text}</h2>
         <div>
-        <button onClick = {deletehandler} >Delete</button>
+        <button  className = 'btn' onClick = {deletehandler} >Delete</button>
         </div>
         {modalisopen && <Modal oncancel = {closehandler} onconfirm = {closehandler}/>}
         {modalisopen && <Backdrop oncancel = {closehandler}/>} 

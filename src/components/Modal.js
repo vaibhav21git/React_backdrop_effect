@@ -12,10 +12,10 @@ function Modal(props) {
 
 
      return (
-     <div>
+     <div className="modal">
     <p>Are you Sure</p>
-    <button onClick={Cancelhandler}>Cancel</button>
-    <button onClick={Confirmhandler}>Confirm</button>
+    <button  className = "btn btn--alt" onClick={Cancelhandler}>Cancel</button>
+    <button  className = "btn" onClick={Confirmhandler}>Confirm</button>
 </div>
 );}
 
